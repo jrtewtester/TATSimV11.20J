@@ -20,8 +20,6 @@ namespace TATSim
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //InstructionsForm instForm = new InstructionsForm();
-            //instForm.Visible = false;
 
             TATSimForm beginningForm = new TATSimForm();
             beginningForm.Show();
