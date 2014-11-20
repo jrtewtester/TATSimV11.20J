@@ -78,7 +78,7 @@ namespace TATSim
 
         public Image Image
         {
-            get { return image}
+            get { return image; }
         }
 
         public Motorcycle(string newName, float newWeight, float newMileage, float newSpeed, int newOil, int newBattery, int newLights, Tire newTires, Tank newTank, Image newImage)
