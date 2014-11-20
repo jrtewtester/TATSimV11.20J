@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TATSim
 {
-    public partial class TATSimForm : Form
+    public partial class GameBoardForm : Form
     {
-        public TATSimForm()
+        public GameBoardForm()
         {
             InitializeComponent();
         }
@@ -21,19 +21,5 @@ namespace TATSim
         {
             Application.Exit();
         }
-
-        private void btnInstructions_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            InstructionsForm instForm = new InstructionsForm();
-            instForm.Show();
-        }
-
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-            startScreenPanel.Visible = false;
-        }
-
     }
 }

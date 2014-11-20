@@ -9,3 +9,4 @@ D:\Desktop\TATSimV11.20J\TATSim\TATSim\bin\Debug\TATSim.exe
 D:\Desktop\TATSimV11.20J\TATSim\TATSim\bin\Debug\TATSim.pdb
 D:\Desktop\TATSimV11.20J\TATSim\TATSim\obj\Debug\TATSim.exe
 D:\Desktop\TATSimV11.20J\TATSim\TATSim\obj\Debug\TATSim.pdb
+D:\Desktop\TATSimV11.20J\TATSim\TATSim\obj\Debug\TATSim.GameBoardForm.resources

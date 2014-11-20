@@ -50,6 +50,12 @@
     <Compile Include="BeginningForm.Designer.cs">
       <DependentUpon>BeginningForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameBoardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameBoardForm.Designer.cs">
+      <DependentUpon>GameBoardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InstructionsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Tire.cs" />
     <EmbeddedResource Include="BeginningForm.resx">
       <DependentUpon>BeginningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameBoardForm.resx">
+      <DependentUpon>GameBoardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InstructionsForm.resx">
       <DependentUpon>InstructionsForm.cs</DependentUpon>
