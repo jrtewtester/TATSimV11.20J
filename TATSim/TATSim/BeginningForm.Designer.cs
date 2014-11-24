@@ -33,8 +33,19 @@
             this.btnInstructions = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.motoSelectPanel = new System.Windows.Forms.Panel();
+            this.xlrPicBox = new System.Windows.Forms.PictureBox();
+            this.klrPicBox = new System.Windows.Forms.PictureBox();
+            this.drPicBox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.startScreenPanel.SuspendLayout();
+            this.motoSelectPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xlrPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klrPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.drPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,6 +95,49 @@
             this.lblTitle.TabIndex = 5;
             this.lblTitle.Text = "TAT Simulator 2014";
             // 
+            // motoSelectPanel
+            // 
+            this.motoSelectPanel.Controls.Add(this.label3);
+            this.motoSelectPanel.Controls.Add(this.label2);
+            this.motoSelectPanel.Controls.Add(this.label1);
+            this.motoSelectPanel.Controls.Add(this.xlrPicBox);
+            this.motoSelectPanel.Controls.Add(this.klrPicBox);
+            this.motoSelectPanel.Controls.Add(this.drPicBox);
+            this.motoSelectPanel.Location = new System.Drawing.Point(13, 13);
+            this.motoSelectPanel.Name = "motoSelectPanel";
+            this.motoSelectPanel.Size = new System.Drawing.Size(1325, 704);
+            this.motoSelectPanel.TabIndex = 1;
+            // 
+            // xlrPicBox
+            // 
+            this.xlrPicBox.Image = global::TATSim.Properties.Resources.XRLCutOut;
+            this.xlrPicBox.Location = new System.Drawing.Point(918, 140);
+            this.xlrPicBox.Name = "xlrPicBox";
+            this.xlrPicBox.Size = new System.Drawing.Size(300, 250);
+            this.xlrPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.xlrPicBox.TabIndex = 2;
+            this.xlrPicBox.TabStop = false;
+            // 
+            // klrPicBox
+            // 
+            this.klrPicBox.Image = global::TATSim.Properties.Resources.KLRCutOut;
+            this.klrPicBox.Location = new System.Drawing.Point(512, 140);
+            this.klrPicBox.Name = "klrPicBox";
+            this.klrPicBox.Size = new System.Drawing.Size(300, 250);
+            this.klrPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.klrPicBox.TabIndex = 1;
+            this.klrPicBox.TabStop = false;
+            // 
+            // drPicBox
+            // 
+            this.drPicBox.Image = global::TATSim.Properties.Resources.DRCutOut;
+            this.drPicBox.Location = new System.Drawing.Point(106, 140);
+            this.drPicBox.Name = "drPicBox";
+            this.drPicBox.Size = new System.Drawing.Size(300, 250);
+            this.drPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.drPicBox.TabIndex = 0;
+            this.drPicBox.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -94,18 +148,54 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(177, 393);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 26);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "The Dirty Ron";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(498, 393);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(338, 26);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "The Kind and Lonesome Ralph";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1014, 393);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 26);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "The X Ray";
+            // 
             // TATSimForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.motoSelectPanel);
             this.Controls.Add(this.startScreenPanel);
             this.Name = "TATSimForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TAT Sim 2014";
             this.startScreenPanel.ResumeLayout(false);
             this.startScreenPanel.PerformLayout();
+            this.motoSelectPanel.ResumeLayout(false);
+            this.motoSelectPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xlrPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klrPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.drPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -118,6 +208,13 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel motoSelectPanel;
+        private System.Windows.Forms.PictureBox drPicBox;
+        private System.Windows.Forms.PictureBox klrPicBox;
+        private System.Windows.Forms.PictureBox xlrPicBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
 
     }
 }
