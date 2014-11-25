@@ -6,35 +6,50 @@ using System.Threading.Tasks;
 
 namespace TATSim
 {
-    class Tank
+    public class Tank
     {
-        private float gallons;
+        private string name;
 
-        public float Gallons
+        public string Name
         {
-            get { return gallons; }
-            set { gallons = value; }
+            get { return name; }
+            set { name = value; }
         }
 
-        private float weight;
+        private int range;
 
-        public float Weight
+        public int Range
+        {
+            get { return range; }
+            set { range = value; }
+        }
+
+        private int weight;
+
+        public int Weight
         {
             get { return weight; }
+            set { weight = value; }
         }
 
-        private float cost;
+        private int cost;
 
-        public float Cost
+        public int Cost
         {
             get { return cost; }
+            set { cost = value; }
         }
 
-        public Tank(float newGallons, float newWeight, float newCost)
+        public Tank(int newRange, int newWeight, int newCost)
         {
-            gallons = newGallons;
+            range = newRange;
             weight = newWeight;
             cost = newCost;
+        }
+
+        public Tank()
+        {
+
         }
     }
 }

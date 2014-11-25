@@ -58,10 +58,11 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(638, 661);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.Location = new System.Drawing.Point(610, 661);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
+            this.button1.Size = new System.Drawing.Size(130, 39);
             this.button1.TabIndex = 4;
             this.button1.Text = "Got It!";
             this.button1.UseVisualStyleBackColor = true;

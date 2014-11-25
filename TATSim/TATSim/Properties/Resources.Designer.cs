@@ -63,6 +63,16 @@ namespace TATSim.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dick {
+            get {
+                object obj = ResourceManager.GetObject("Dick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DRCutOut {
             get {
                 object obj = ResourceManager.GetObject("DRCutOut", resourceCulture);

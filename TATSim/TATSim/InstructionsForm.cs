@@ -17,7 +17,8 @@ namespace TATSim
             InitializeComponent();
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)//to make sure program closes completely if X is used to close program
+        //to make sure program closes completely if X is used to close program
+        protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
         }

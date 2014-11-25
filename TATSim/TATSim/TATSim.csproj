@@ -50,6 +50,8 @@
     <Compile Include="BeginningForm.Designer.cs">
       <DependentUpon>BeginningForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateMoto.cs" />
+    <Compile Include="Exhaust.cs" />
     <Compile Include="GameBoardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +102,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Dick.jpg" />
     <Content Include="Images\DRCutOut.png" />
     <Content Include="Images\KLRCutOut.png" />
     <Content Include="Images\XRLCutOut.png" />

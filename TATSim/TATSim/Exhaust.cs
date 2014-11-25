@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TATSim
 {
-    public class Tire
+    public class Exhaust
     {
         private string name;
 
@@ -22,14 +22,6 @@ namespace TATSim
         {
             get { return performance; }
             set { performance = value; }
-        }
-
-        private float wear;
-
-        public float Wear
-        {
-            get { return wear; }
-            set { wear = value; }
         }
 
         private int cost;
@@ -48,15 +40,24 @@ namespace TATSim
             set { weight = value; }
         }
 
-        public Tire(string newName, int newPerformance, float newWear, int newCost, int newWeight)
+        private int range;
+
+        public int Range
+        {
+            get { return range; }
+            set { range = value; }
+        }
+
+        public Exhaust(string newName, int newPerformance, int newCost, int newWeight, int newRange)
         {
             name = newName;
             performance = newPerformance;
-            wear = newWear;
             cost = newCost;
             weight = newWeight;
+            range = newRange;
         }
-        public Tire()
+
+        public Exhaust()
         {
 
         }

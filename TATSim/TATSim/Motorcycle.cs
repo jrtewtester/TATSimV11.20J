@@ -7,36 +7,38 @@ using System.Threading.Tasks;
 
 namespace TATSim
 {
-    class Motorcycle
+    public class Motorcycle
     {
         private string name;
 
         public string Name
         {
             get { return name; }
+            set { name = value; }
         }
 
-        private float weight;
+        private int weight;
 
-        public float Weight
+        public int Weight
         {
             get { return weight; }
+            set { weight = value; }
         }
 
-        private float mileage;
+        private int range;
 
-        public float Mileage
+        public int Range
         {
-            get { return mileage; }
-            set { mileage = value; }
+            get { return range; }
+            set { range = value; }
         }
 
-        private float speed;
+        private int performance;
 
-        public float Speed
+        public int Performance
         {
-            get { return speed; }
-            set { speed = value; }
+            get { return performance; }
+            set { performance = value; }
         }
 
         private int oil;
@@ -65,6 +67,7 @@ namespace TATSim
         public Tire Tires
         {
             get { return tires; }
+            set { tires = value; }
         }
 
         private Tank gasTank;
@@ -72,6 +75,15 @@ namespace TATSim
         public Tank GasTank
         {
             get { return gasTank; }
+            set { gasTank = value; }
+        }
+
+        private Exhaust exhaust;
+
+        public Exhaust TheExhaust
+        {
+            get { return exhaust; }
+            set { exhaust = value; }
         }
 
         private Image image;
@@ -79,20 +91,26 @@ namespace TATSim
         public Image Image
         {
             get { return image; }
+            set { image = value; }
         }
 
-        public Motorcycle(string newName, float newWeight, float newMileage, float newSpeed, int newOil, int newBattery, int newLights, Tire newTires, Tank newTank, Image newImage)
+        public Motorcycle(string newName, int newWeight, int newRange, int newPerformance, int newOil, int newBattery, int newLights, Tire newTires, Tank newTank, Image newImage)
         {
             name = newName;
             weight = newWeight;
-            mileage = newMileage;
-            speed = newSpeed;
+            range = newRange;
+            performance = newPerformance;
             oil = newOil;
             battery = newBattery;
             lights = newLights;
             tires = newTires;
             gasTank = newTank;
             image = newImage;
+        }
+
+        public Motorcycle()
+        {
+
         }
     }
 }
