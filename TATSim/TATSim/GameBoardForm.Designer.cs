@@ -29,57 +29,60 @@
         private void InitializeComponent()
         {
             this.gameBoardPanel = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dayNumTextBox = new System.Windows.Forms.TextBox();
-            this.cashTextBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tireStatTB = new System.Windows.Forms.TextBox();
-            this.fuelRangeTB = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.playerPicPB = new System.Windows.Forms.PictureBox();
-            this.playersMotoPB = new System.Windows.Forms.PictureBox();
-            this.tatMapPB = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.campingPB = new System.Windows.Forms.PictureBox();
-            this.hotelPB = new System.Windows.Forms.PictureBox();
-            this.ramenPB = new System.Windows.Forms.PictureBox();
-            this.steakPB = new System.Windows.Forms.PictureBox();
-            this.campRadBut = new System.Windows.Forms.RadioButton();
-            this.hotelRadBut = new System.Windows.Forms.RadioButton();
-            this.ramenRadBut = new System.Windows.Forms.RadioButton();
+            this.nextDayBtn = new System.Windows.Forms.Button();
+            this.eatPanel = new System.Windows.Forms.Panel();
             this.steakRadBut = new System.Windows.Forms.RadioButton();
+            this.ramenRadBut = new System.Windows.Forms.RadioButton();
+            this.steakPB = new System.Windows.Forms.PictureBox();
+            this.ramenPB = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.sleepPanel = new System.Windows.Forms.Panel();
+            this.hotelRadBut = new System.Windows.Forms.RadioButton();
+            this.campRadBut = new System.Windows.Forms.RadioButton();
+            this.hotelPB = new System.Windows.Forms.PictureBox();
+            this.campingPB = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.playerPicPB = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.fuelRangeTB = new System.Windows.Forms.TextBox();
+            this.tireStatTB = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.playersMotoPB = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cashTextBox = new System.Windows.Forms.TextBox();
+            this.dayNumTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tatMapPB = new System.Windows.Forms.PictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.routeSelectPanel1 = new System.Windows.Forms.Panel();
+            this.routeStartBtn1 = new System.Windows.Forms.Button();
+            this.capeHRouteRadBut = new System.Windows.Forms.RadioButton();
+            this.nyRouteRadBut = new System.Windows.Forms.RadioButton();
             this.gameBoardPanel.SuspendLayout();
+            this.eatPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.steakPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ramenPB)).BeginInit();
+            this.sleepPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.campingPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerPicPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playersMotoPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tatMapPB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.campingPB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelPB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ramenPB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.steakPB)).BeginInit();
+            this.routeSelectPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gameBoardPanel
             // 
-            this.gameBoardPanel.Controls.Add(this.steakRadBut);
-            this.gameBoardPanel.Controls.Add(this.ramenRadBut);
-            this.gameBoardPanel.Controls.Add(this.hotelRadBut);
-            this.gameBoardPanel.Controls.Add(this.campRadBut);
-            this.gameBoardPanel.Controls.Add(this.steakPB);
-            this.gameBoardPanel.Controls.Add(this.ramenPB);
-            this.gameBoardPanel.Controls.Add(this.hotelPB);
-            this.gameBoardPanel.Controls.Add(this.campingPB);
-            this.gameBoardPanel.Controls.Add(this.label13);
-            this.gameBoardPanel.Controls.Add(this.label12);
+            this.gameBoardPanel.Controls.Add(this.nextDayBtn);
+            this.gameBoardPanel.Controls.Add(this.eatPanel);
+            this.gameBoardPanel.Controls.Add(this.sleepPanel);
             this.gameBoardPanel.Controls.Add(this.label11);
             this.gameBoardPanel.Controls.Add(this.label10);
             this.gameBoardPanel.Controls.Add(this.label9);
@@ -104,6 +107,339 @@
             this.gameBoardPanel.Size = new System.Drawing.Size(1326, 705);
             this.gameBoardPanel.TabIndex = 0;
             // 
+            // nextDayBtn
+            // 
+            this.nextDayBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextDayBtn.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.nextDayBtn.Location = new System.Drawing.Point(953, 632);
+            this.nextDayBtn.Name = "nextDayBtn";
+            this.nextDayBtn.Size = new System.Drawing.Size(173, 40);
+            this.nextDayBtn.TabIndex = 42;
+            this.nextDayBtn.Text = "Let\'s Ride!";
+            this.nextDayBtn.UseVisualStyleBackColor = true;
+            this.nextDayBtn.Click += new System.EventHandler(this.nextDayBtn_Click);
+            // 
+            // eatPanel
+            // 
+            this.eatPanel.Controls.Add(this.steakRadBut);
+            this.eatPanel.Controls.Add(this.ramenRadBut);
+            this.eatPanel.Controls.Add(this.steakPB);
+            this.eatPanel.Controls.Add(this.ramenPB);
+            this.eatPanel.Controls.Add(this.label13);
+            this.eatPanel.Location = new System.Drawing.Point(448, 503);
+            this.eatPanel.Name = "eatPanel";
+            this.eatPanel.Size = new System.Drawing.Size(353, 190);
+            this.eatPanel.TabIndex = 39;
+            // 
+            // steakRadBut
+            // 
+            this.steakRadBut.AutoSize = true;
+            this.steakRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.steakRadBut.Location = new System.Drawing.Point(145, 140);
+            this.steakRadBut.Name = "steakRadBut";
+            this.steakRadBut.Size = new System.Drawing.Size(160, 24);
+            this.steakRadBut.TabIndex = 37;
+            this.steakRadBut.TabStop = true;
+            this.steakRadBut.Text = "Steak Dinner - $15";
+            this.steakRadBut.UseVisualStyleBackColor = true;
+            // 
+            // ramenRadBut
+            // 
+            this.ramenRadBut.AutoSize = true;
+            this.ramenRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ramenRadBut.Location = new System.Drawing.Point(145, 56);
+            this.ramenRadBut.Name = "ramenRadBut";
+            this.ramenRadBut.Size = new System.Drawing.Size(96, 24);
+            this.ramenRadBut.TabIndex = 35;
+            this.ramenRadBut.TabStop = true;
+            this.ramenRadBut.Text = "Soup - $1";
+            this.ramenRadBut.UseVisualStyleBackColor = true;
+            // 
+            // steakPB
+            // 
+            this.steakPB.Image = global::TATSim.Properties.Resources.steak_dinner;
+            this.steakPB.Location = new System.Drawing.Point(17, 122);
+            this.steakPB.Name = "steakPB";
+            this.steakPB.Size = new System.Drawing.Size(114, 59);
+            this.steakPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.steakPB.TabIndex = 30;
+            this.steakPB.TabStop = false;
+            // 
+            // ramenPB
+            // 
+            this.ramenPB.Image = global::TATSim.Properties.Resources.ramsoup;
+            this.ramenPB.Location = new System.Drawing.Point(17, 38);
+            this.ramenPB.Name = "ramenPB";
+            this.ramenPB.Size = new System.Drawing.Size(114, 59);
+            this.ramenPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ramenPB.TabIndex = 29;
+            this.ramenPB.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(30, 3);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(232, 31);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "What am I eating?";
+            // 
+            // sleepPanel
+            // 
+            this.sleepPanel.Controls.Add(this.hotelRadBut);
+            this.sleepPanel.Controls.Add(this.campRadBut);
+            this.sleepPanel.Controls.Add(this.hotelPB);
+            this.sleepPanel.Controls.Add(this.campingPB);
+            this.sleepPanel.Controls.Add(this.label12);
+            this.sleepPanel.Location = new System.Drawing.Point(11, 502);
+            this.sleepPanel.Name = "sleepPanel";
+            this.sleepPanel.Size = new System.Drawing.Size(351, 192);
+            this.sleepPanel.TabIndex = 38;
+            // 
+            // hotelRadBut
+            // 
+            this.hotelRadBut.AutoSize = true;
+            this.hotelRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hotelRadBut.Location = new System.Drawing.Point(135, 141);
+            this.hotelRadBut.Name = "hotelRadBut";
+            this.hotelRadBut.Size = new System.Drawing.Size(105, 24);
+            this.hotelRadBut.TabIndex = 33;
+            this.hotelRadBut.TabStop = true;
+            this.hotelRadBut.Text = "Hotel - $30";
+            this.hotelRadBut.UseVisualStyleBackColor = true;
+            // 
+            // campRadBut
+            // 
+            this.campRadBut.AutoSize = true;
+            this.campRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campRadBut.Location = new System.Drawing.Point(135, 57);
+            this.campRadBut.Name = "campRadBut";
+            this.campRadBut.Size = new System.Drawing.Size(121, 24);
+            this.campRadBut.TabIndex = 31;
+            this.campRadBut.TabStop = true;
+            this.campRadBut.Text = "Camping - $5";
+            this.campRadBut.UseVisualStyleBackColor = true;
+            // 
+            // hotelPB
+            // 
+            this.hotelPB.Image = global::TATSim.Properties.Resources.hotelroom;
+            this.hotelPB.Location = new System.Drawing.Point(14, 123);
+            this.hotelPB.Name = "hotelPB";
+            this.hotelPB.Size = new System.Drawing.Size(114, 59);
+            this.hotelPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.hotelPB.TabIndex = 28;
+            this.hotelPB.TabStop = false;
+            // 
+            // campingPB
+            // 
+            this.campingPB.Image = global::TATSim.Properties.Resources.tent;
+            this.campingPB.Location = new System.Drawing.Point(14, 39);
+            this.campingPB.Name = "campingPB";
+            this.campingPB.Size = new System.Drawing.Size(114, 59);
+            this.campingPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.campingPB.TabIndex = 27;
+            this.campingPB.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(30, 4);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(275, 31);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Where am I sleeping?";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label11.Location = new System.Drawing.Point(263, 452);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(263, 44);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Daily Choices:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(983, 502);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 26);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Hunger:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(961, 443);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(126, 26);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Exhaustion:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(961, 381);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(122, 26);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Enjoyment:";
+            // 
+            // playerPicPB
+            // 
+            this.playerPicPB.Image = global::TATSim.Properties.Resources.Dick;
+            this.playerPicPB.Location = new System.Drawing.Point(1189, 346);
+            this.playerPicPB.Name = "playerPicPB";
+            this.playerPicPB.Size = new System.Drawing.Size(98, 237);
+            this.playerPicPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.playerPicPB.TabIndex = 20;
+            this.playerPicPB.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label7.Location = new System.Drawing.Point(916, 346);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(212, 31);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Character Stats:";
+            // 
+            // fuelRangeTB
+            // 
+            this.fuelRangeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fuelRangeTB.Location = new System.Drawing.Point(1136, 268);
+            this.fuelRangeTB.Name = "fuelRangeTB";
+            this.fuelRangeTB.ReadOnly = true;
+            this.fuelRangeTB.Size = new System.Drawing.Size(121, 30);
+            this.fuelRangeTB.TabIndex = 18;
+            this.fuelRangeTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // tireStatTB
+            // 
+            this.tireStatTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tireStatTB.Location = new System.Drawing.Point(1136, 196);
+            this.tireStatTB.Name = "tireStatTB";
+            this.tireStatTB.ReadOnly = true;
+            this.tireStatTB.Size = new System.Drawing.Size(121, 30);
+            this.tireStatTB.TabIndex = 17;
+            this.tireStatTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(1095, 235);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(144, 29);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Fuel Range:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(1095, 167);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 29);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Tires:";
+            // 
+            // playersMotoPB
+            // 
+            this.playersMotoPB.Location = new System.Drawing.Point(909, 167);
+            this.playersMotoPB.Name = "playersMotoPB";
+            this.playersMotoPB.Size = new System.Drawing.Size(173, 149);
+            this.playersMotoPB.TabIndex = 14;
+            this.playersMotoPB.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label4.Location = new System.Drawing.Point(1031, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 31);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "My Bike";
+            // 
+            // cashTextBox
+            // 
+            this.cashTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashTextBox.Location = new System.Drawing.Point(1127, 82);
+            this.cashTextBox.Name = "cashTextBox";
+            this.cashTextBox.ReadOnly = true;
+            this.cashTextBox.Size = new System.Drawing.Size(121, 30);
+            this.cashTextBox.TabIndex = 12;
+            this.cashTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // dayNumTextBox
+            // 
+            this.dayNumTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dayNumTextBox.Location = new System.Drawing.Point(1127, 15);
+            this.dayNumTextBox.Name = "dayNumTextBox";
+            this.dayNumTextBox.ReadOnly = true;
+            this.dayNumTextBox.Size = new System.Drawing.Size(121, 30);
+            this.dayNumTextBox.TabIndex = 11;
+            this.dayNumTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(1000, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(236, 17);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "(You have 30 days to finish the trip!)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(954, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 29);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Current Cash:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(964, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(164, 29);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Day Number:";
+            // 
+            // tatMapPB
+            // 
+            this.tatMapPB.Location = new System.Drawing.Point(3, 55);
+            this.tatMapPB.Name = "tatMapPB";
+            this.tatMapPB.Size = new System.Drawing.Size(855, 395);
+            this.tatMapPB.TabIndex = 7;
+            this.tatMapPB.TabStop = false;
+            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
@@ -115,290 +451,51 @@
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "TAT Progress";
             // 
-            // label1
+            // routeSelectPanel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(942, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 31);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Day Number:";
+            this.routeSelectPanel1.Controls.Add(this.routeStartBtn1);
+            this.routeSelectPanel1.Controls.Add(this.capeHRouteRadBut);
+            this.routeSelectPanel1.Controls.Add(this.nyRouteRadBut);
+            this.routeSelectPanel1.Location = new System.Drawing.Point(12, 12);
+            this.routeSelectPanel1.Name = "routeSelectPanel1";
+            this.routeSelectPanel1.Size = new System.Drawing.Size(1326, 705);
+            this.routeSelectPanel1.TabIndex = 1;
             // 
-            // label2
+            // routeStartBtn1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(932, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 31);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Current Cash:";
+            this.routeStartBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routeStartBtn1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.routeStartBtn1.Location = new System.Drawing.Point(542, 626);
+            this.routeStartBtn1.Name = "routeStartBtn1";
+            this.routeStartBtn1.Size = new System.Drawing.Size(242, 42);
+            this.routeStartBtn1.TabIndex = 7;
+            this.routeStartBtn1.Text = "I\'m Ready to Start!";
+            this.routeStartBtn1.UseVisualStyleBackColor = true;
+            this.routeStartBtn1.Click += new System.EventHandler(this.routeStartBtn1_Click);
             // 
-            // label3
+            // capeHRouteRadBut
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1000, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(236, 17);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "(You have 30 days to finish the trip!)";
+            this.capeHRouteRadBut.AutoSize = true;
+            this.capeHRouteRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.capeHRouteRadBut.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.capeHRouteRadBut.Location = new System.Drawing.Point(194, 564);
+            this.capeHRouteRadBut.Name = "capeHRouteRadBut";
+            this.capeHRouteRadBut.Size = new System.Drawing.Size(270, 33);
+            this.capeHRouteRadBut.TabIndex = 1;
+            this.capeHRouteRadBut.Text = "Start in Cape Hatteras!";
+            this.capeHRouteRadBut.UseVisualStyleBackColor = true;
             // 
-            // dayNumTextBox
+            // nyRouteRadBut
             // 
-            this.dayNumTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayNumTextBox.Location = new System.Drawing.Point(1127, 22);
-            this.dayNumTextBox.Name = "dayNumTextBox";
-            this.dayNumTextBox.ReadOnly = true;
-            this.dayNumTextBox.Size = new System.Drawing.Size(121, 30);
-            this.dayNumTextBox.TabIndex = 11;
-            // 
-            // cashTextBox
-            // 
-            this.cashTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashTextBox.Location = new System.Drawing.Point(1127, 89);
-            this.cashTextBox.Name = "cashTextBox";
-            this.cashTextBox.ReadOnly = true;
-            this.cashTextBox.Size = new System.Drawing.Size(121, 30);
-            this.cashTextBox.TabIndex = 12;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(1019, 138);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 39);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "My Bike";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(1088, 191);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 31);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Tires:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(1088, 271);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 31);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Fuel Range:";
-            // 
-            // tireStatTB
-            // 
-            this.tireStatTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tireStatTB.Location = new System.Drawing.Point(1129, 225);
-            this.tireStatTB.Name = "tireStatTB";
-            this.tireStatTB.ReadOnly = true;
-            this.tireStatTB.Size = new System.Drawing.Size(121, 30);
-            this.tireStatTB.TabIndex = 17;
-            // 
-            // fuelRangeTB
-            // 
-            this.fuelRangeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fuelRangeTB.Location = new System.Drawing.Point(1129, 305);
-            this.fuelRangeTB.Name = "fuelRangeTB";
-            this.fuelRangeTB.ReadOnly = true;
-            this.fuelRangeTB.Size = new System.Drawing.Size(121, 30);
-            this.fuelRangeTB.TabIndex = 18;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label7.Location = new System.Drawing.Point(891, 377);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(261, 39);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Character Stats:";
-            // 
-            // playerPicPB
-            // 
-            this.playerPicPB.Image = global::TATSim.Properties.Resources.Dick;
-            this.playerPicPB.Location = new System.Drawing.Point(1189, 394);
-            this.playerPicPB.Name = "playerPicPB";
-            this.playerPicPB.Size = new System.Drawing.Size(110, 267);
-            this.playerPicPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.playerPicPB.TabIndex = 20;
-            this.playerPicPB.TabStop = false;
-            // 
-            // playersMotoPB
-            // 
-            this.playersMotoPB.Location = new System.Drawing.Point(902, 191);
-            this.playersMotoPB.Name = "playersMotoPB";
-            this.playersMotoPB.Size = new System.Drawing.Size(180, 166);
-            this.playersMotoPB.TabIndex = 14;
-            this.playersMotoPB.TabStop = false;
-            // 
-            // tatMapPB
-            // 
-            this.tatMapPB.Location = new System.Drawing.Point(3, 55);
-            this.tatMapPB.Name = "tatMapPB";
-            this.tatMapPB.Size = new System.Drawing.Size(855, 395);
-            this.tatMapPB.TabIndex = 7;
-            this.tatMapPB.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(945, 429);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 31);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Enjoyment:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(945, 516);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 31);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Exhaustion:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(971, 600);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 31);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Hunger:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label11.Location = new System.Drawing.Point(259, 453);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(322, 54);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Daily Choices:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(43, 507);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(275, 31);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "Where am I sleeping?";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(480, 507);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(232, 31);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "What am I eating?";
-            // 
-            // campingPB
-            // 
-            this.campingPB.Location = new System.Drawing.Point(27, 542);
-            this.campingPB.Name = "campingPB";
-            this.campingPB.Size = new System.Drawing.Size(114, 59);
-            this.campingPB.TabIndex = 27;
-            this.campingPB.TabStop = false;
-            // 
-            // hotelPB
-            // 
-            this.hotelPB.Location = new System.Drawing.Point(27, 626);
-            this.hotelPB.Name = "hotelPB";
-            this.hotelPB.Size = new System.Drawing.Size(114, 59);
-            this.hotelPB.TabIndex = 28;
-            this.hotelPB.TabStop = false;
-            // 
-            // ramenPB
-            // 
-            this.ramenPB.Location = new System.Drawing.Point(467, 542);
-            this.ramenPB.Name = "ramenPB";
-            this.ramenPB.Size = new System.Drawing.Size(114, 59);
-            this.ramenPB.TabIndex = 29;
-            this.ramenPB.TabStop = false;
-            // 
-            // steakPB
-            // 
-            this.steakPB.Location = new System.Drawing.Point(467, 626);
-            this.steakPB.Name = "steakPB";
-            this.steakPB.Size = new System.Drawing.Size(114, 59);
-            this.steakPB.TabIndex = 30;
-            this.steakPB.TabStop = false;
-            // 
-            // campRadBut
-            // 
-            this.campRadBut.AutoSize = true;
-            this.campRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campRadBut.Location = new System.Drawing.Point(148, 560);
-            this.campRadBut.Name = "campRadBut";
-            this.campRadBut.Size = new System.Drawing.Size(121, 24);
-            this.campRadBut.TabIndex = 31;
-            this.campRadBut.TabStop = true;
-            this.campRadBut.Text = "Camping - $5";
-            this.campRadBut.UseVisualStyleBackColor = true;
-            // 
-            // hotelRadBut
-            // 
-            this.hotelRadBut.AutoSize = true;
-            this.hotelRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hotelRadBut.Location = new System.Drawing.Point(148, 644);
-            this.hotelRadBut.Name = "hotelRadBut";
-            this.hotelRadBut.Size = new System.Drawing.Size(105, 24);
-            this.hotelRadBut.TabIndex = 33;
-            this.hotelRadBut.TabStop = true;
-            this.hotelRadBut.Text = "Hotel - $30";
-            this.hotelRadBut.UseVisualStyleBackColor = true;
-            // 
-            // ramenRadBut
-            // 
-            this.ramenRadBut.AutoSize = true;
-            this.ramenRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ramenRadBut.Location = new System.Drawing.Point(595, 560);
-            this.ramenRadBut.Name = "ramenRadBut";
-            this.ramenRadBut.Size = new System.Drawing.Size(110, 24);
-            this.ramenRadBut.TabIndex = 35;
-            this.ramenRadBut.TabStop = true;
-            this.ramenRadBut.Text = "Ramen - $1";
-            this.ramenRadBut.UseVisualStyleBackColor = true;
-            // 
-            // steakRadBut
-            // 
-            this.steakRadBut.AutoSize = true;
-            this.steakRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.steakRadBut.Location = new System.Drawing.Point(595, 644);
-            this.steakRadBut.Name = "steakRadBut";
-            this.steakRadBut.Size = new System.Drawing.Size(160, 24);
-            this.steakRadBut.TabIndex = 37;
-            this.steakRadBut.TabStop = true;
-            this.steakRadBut.Text = "Steak Dinner - $15";
-            this.steakRadBut.UseVisualStyleBackColor = true;
+            this.nyRouteRadBut.AutoSize = true;
+            this.nyRouteRadBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nyRouteRadBut.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.nyRouteRadBut.Location = new System.Drawing.Point(909, 564);
+            this.nyRouteRadBut.Name = "nyRouteRadBut";
+            this.nyRouteRadBut.Size = new System.Drawing.Size(223, 33);
+            this.nyRouteRadBut.TabIndex = 0;
+            this.nyRouteRadBut.Text = "Start in New York!";
+            this.nyRouteRadBut.UseVisualStyleBackColor = true;
             // 
             // GameBoardForm
             // 
@@ -407,19 +504,26 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.gameBoardPanel);
+            this.Controls.Add(this.routeSelectPanel1);
             this.Name = "GameBoardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TAT Sim 2014";
             this.Load += new System.EventHandler(this.GameBoardForm_Load);
             this.gameBoardPanel.ResumeLayout(false);
             this.gameBoardPanel.PerformLayout();
+            this.eatPanel.ResumeLayout(false);
+            this.eatPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.steakPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ramenPB)).EndInit();
+            this.sleepPanel.ResumeLayout(false);
+            this.sleepPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.campingPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerPicPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playersMotoPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tatMapPB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.campingPB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelPB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ramenPB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.steakPB)).EndInit();
+            this.routeSelectPanel1.ResumeLayout(false);
+            this.routeSelectPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -456,6 +560,13 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel routeSelectPanel1;
+        private System.Windows.Forms.RadioButton capeHRouteRadBut;
+        private System.Windows.Forms.RadioButton nyRouteRadBut;
+        private System.Windows.Forms.Button routeStartBtn1;
+        private System.Windows.Forms.Panel eatPanel;
+        private System.Windows.Forms.Panel sleepPanel;
+        private System.Windows.Forms.Button nextDayBtn;
 
     }
 }

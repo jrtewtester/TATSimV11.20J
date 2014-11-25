@@ -13,6 +13,7 @@ namespace TATSim
     public partial class TATSimForm : Form
     {
         public Motorcycle playersMoto = new Motorcycle();
+        public int startCash = 5000;
         //public Tire playersTire = new Tire();
         //public Tank playersTank = new Tank();
         //public Exhaust playersExhaust = new Exhaust();
@@ -103,6 +104,10 @@ namespace TATSim
                 CreateMoto.CreateTireObj(playersMoto, tireType);
                 CreateMoto.CreateTankObj(playersMoto, tankType);
                 CreateMoto.CreateExhaustObj(playersMoto, exhaustType);
+
+                startCash -= playersMoto.Tires.Cost;
+                startCash -= playersMoto.GasTank.Cost;
+                startCash -= playersMoto.TheExhaust.Cost;
 
                 //playersMoto.Tires = playersTire;
                 //playersMoto.GasTank = playersTank;
