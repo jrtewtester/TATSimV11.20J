@@ -13,6 +13,7 @@ namespace TATSim
             if (player.Route.Equals("cape hatteras"))
             {
                 //Test fo Ross
+                // Test for Jordon
             }
             else if (player.Route.Equals("new york"))
             {
