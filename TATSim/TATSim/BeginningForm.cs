@@ -65,6 +65,7 @@ namespace TATSim
 
                 motoSelectPanel.Visible = false;
                 gearSelectPanel.Visible = true;
+                gearSelectMotoPB.Image = playersMoto.Image;
             }
         }
 

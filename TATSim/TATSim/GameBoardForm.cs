@@ -17,6 +17,7 @@ namespace TATSim
         public Player player = new Player();
         public int day = 1;
         public int cash;
+        public int miles;
         public GameBoardForm(TATSimForm incomingForm)
         {
             // Links the two forms together so we can 
@@ -37,6 +38,7 @@ namespace TATSim
             routeSelectPanel1.Visible = true;
 
             playersMotoObj = originalForm.playersMoto;
+            playersMotoPB.Image = playersMotoObj.Image;
 
             player.Enjoyment = 10;
             player.Exhaustion = 10;
@@ -48,6 +50,9 @@ namespace TATSim
 
             Mechanics.CalcRangeofMoto(playersMotoObj);
             fuelRangeTB.Text = playersMotoObj.Range.ToString() + " miles";
+            miles = Mechanics.CaclDaysMileage();
+
+            mileageTextBox.Text = miles.ToString();
 
             //Console.WriteLine(originalForm.playersMoto.Name.ToString());
             //Console.WriteLine(originalForm.playersMoto.Performance.ToString());

@@ -65,6 +65,8 @@
             this.routeStartBtn1 = new System.Windows.Forms.Button();
             this.capeHRouteRadBut = new System.Windows.Forms.RadioButton();
             this.nyRouteRadBut = new System.Windows.Forms.RadioButton();
+            this.mileageTextBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.gameBoardPanel.SuspendLayout();
             this.eatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.steakPB)).BeginInit();
@@ -80,6 +82,8 @@
             // 
             // gameBoardPanel
             // 
+            this.gameBoardPanel.Controls.Add(this.mileageTextBox);
+            this.gameBoardPanel.Controls.Add(this.label14);
             this.gameBoardPanel.Controls.Add(this.nextDayBtn);
             this.gameBoardPanel.Controls.Add(this.eatPanel);
             this.gameBoardPanel.Controls.Add(this.sleepPanel);
@@ -269,7 +273,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(983, 502);
+            this.label10.Location = new System.Drawing.Point(983, 529);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(89, 26);
             this.label10.TabIndex = 23;
@@ -280,7 +284,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(961, 443);
+            this.label9.Location = new System.Drawing.Point(961, 470);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 26);
             this.label9.TabIndex = 22;
@@ -291,7 +295,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(961, 381);
+            this.label8.Location = new System.Drawing.Point(961, 408);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 26);
             this.label8.TabIndex = 21;
@@ -300,7 +304,7 @@
             // playerPicPB
             // 
             this.playerPicPB.Image = global::TATSim.Properties.Resources.Dick;
-            this.playerPicPB.Location = new System.Drawing.Point(1189, 346);
+            this.playerPicPB.Location = new System.Drawing.Point(1189, 373);
             this.playerPicPB.Name = "playerPicPB";
             this.playerPicPB.Size = new System.Drawing.Size(98, 237);
             this.playerPicPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -312,7 +316,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label7.Location = new System.Drawing.Point(916, 346);
+            this.label7.Location = new System.Drawing.Point(916, 373);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(212, 31);
             this.label7.TabIndex = 19;
@@ -321,7 +325,7 @@
             // fuelRangeTB
             // 
             this.fuelRangeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fuelRangeTB.Location = new System.Drawing.Point(1136, 268);
+            this.fuelRangeTB.Location = new System.Drawing.Point(1136, 313);
             this.fuelRangeTB.Name = "fuelRangeTB";
             this.fuelRangeTB.ReadOnly = true;
             this.fuelRangeTB.Size = new System.Drawing.Size(121, 30);
@@ -331,7 +335,7 @@
             // tireStatTB
             // 
             this.tireStatTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tireStatTB.Location = new System.Drawing.Point(1136, 196);
+            this.tireStatTB.Location = new System.Drawing.Point(1136, 241);
             this.tireStatTB.Name = "tireStatTB";
             this.tireStatTB.ReadOnly = true;
             this.tireStatTB.Size = new System.Drawing.Size(121, 30);
@@ -343,7 +347,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(1095, 235);
+            this.label6.Location = new System.Drawing.Point(1095, 280);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(144, 29);
             this.label6.TabIndex = 16;
@@ -354,7 +358,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(1095, 167);
+            this.label5.Location = new System.Drawing.Point(1095, 212);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 29);
             this.label5.TabIndex = 15;
@@ -362,9 +366,10 @@
             // 
             // playersMotoPB
             // 
-            this.playersMotoPB.Location = new System.Drawing.Point(909, 167);
+            this.playersMotoPB.Location = new System.Drawing.Point(909, 212);
             this.playersMotoPB.Name = "playersMotoPB";
             this.playersMotoPB.Size = new System.Drawing.Size(173, 149);
+            this.playersMotoPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.playersMotoPB.TabIndex = 14;
             this.playersMotoPB.TabStop = false;
             // 
@@ -373,7 +378,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(1031, 123);
+            this.label4.Location = new System.Drawing.Point(1031, 168);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 31);
             this.label4.TabIndex = 13;
@@ -382,7 +387,7 @@
             // cashTextBox
             // 
             this.cashTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashTextBox.Location = new System.Drawing.Point(1127, 82);
+            this.cashTextBox.Location = new System.Drawing.Point(1127, 75);
             this.cashTextBox.Name = "cashTextBox";
             this.cashTextBox.ReadOnly = true;
             this.cashTextBox.Size = new System.Drawing.Size(121, 30);
@@ -415,7 +420,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(954, 83);
+            this.label2.Location = new System.Drawing.Point(954, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 29);
             this.label2.TabIndex = 9;
@@ -497,6 +502,27 @@
             this.nyRouteRadBut.Text = "Start in New York!";
             this.nyRouteRadBut.UseVisualStyleBackColor = true;
             // 
+            // mileageTextBox
+            // 
+            this.mileageTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mileageTextBox.Location = new System.Drawing.Point(1127, 124);
+            this.mileageTextBox.Name = "mileageTextBox";
+            this.mileageTextBox.ReadOnly = true;
+            this.mileageTextBox.Size = new System.Drawing.Size(121, 30);
+            this.mileageTextBox.TabIndex = 44;
+            this.mileageTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label14.Location = new System.Drawing.Point(914, 125);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(212, 29);
+            this.label14.TabIndex = 43;
+            this.label14.Text = "Today\'s Mileage:";
+            // 
             // GameBoardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -567,6 +593,8 @@
         private System.Windows.Forms.Panel eatPanel;
         private System.Windows.Forms.Panel sleepPanel;
         private System.Windows.Forms.Button nextDayBtn;
+        private System.Windows.Forms.TextBox mileageTextBox;
+        private System.Windows.Forms.Label label14;
 
     }
 }

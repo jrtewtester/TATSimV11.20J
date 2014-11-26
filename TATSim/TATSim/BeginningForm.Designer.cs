@@ -59,7 +59,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.playersCyclePB = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.gearSelectMotoPB = new System.Windows.Forms.PictureBox();
             this.exhaustPanel = new System.Windows.Forms.Panel();
             this.yoshiExhaRB = new System.Windows.Forms.RadioButton();
             this.label19 = new System.Windows.Forms.Label();
@@ -100,7 +100,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.klrPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.drPicBox)).BeginInit();
             this.gearSelectPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gearSelectMotoPB)).BeginInit();
             this.exhaustPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yoshiExhaPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nightStalkExhaPB)).BeginInit();
@@ -357,7 +357,7 @@
             this.gearSelectPanel.Controls.Add(this.label22);
             this.gearSelectPanel.Controls.Add(this.label23);
             this.gearSelectPanel.Controls.Add(this.playersCyclePB);
-            this.gearSelectPanel.Controls.Add(this.pictureBox2);
+            this.gearSelectPanel.Controls.Add(this.gearSelectMotoPB);
             this.gearSelectPanel.Controls.Add(this.exhaustPanel);
             this.gearSelectPanel.Controls.Add(this.gasTankPanel);
             this.gearSelectPanel.Controls.Add(this.tirePanel);
@@ -450,13 +450,14 @@
             this.playersCyclePB.TabIndex = 34;
             this.playersCyclePB.Text = "Your Motorcycle";
             // 
-            // pictureBox2
+            // gearSelectMotoPB
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(889, 77);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(275, 139);
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
+            this.gearSelectMotoPB.Location = new System.Drawing.Point(889, 77);
+            this.gearSelectMotoPB.Name = "gearSelectMotoPB";
+            this.gearSelectMotoPB.Size = new System.Drawing.Size(275, 139);
+            this.gearSelectMotoPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gearSelectMotoPB.TabIndex = 33;
+            this.gearSelectMotoPB.TabStop = false;
             // 
             // exhaustPanel
             // 
@@ -809,9 +810,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.gearSelectPanel);
             this.Controls.Add(this.motoSelectPanel);
             this.Controls.Add(this.startScreenPanel);
-            this.Controls.Add(this.gearSelectPanel);
             this.Name = "TATSimForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TAT Sim 2014";
@@ -825,7 +826,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.drPicBox)).EndInit();
             this.gearSelectPanel.ResumeLayout(false);
             this.gearSelectPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gearSelectMotoPB)).EndInit();
             this.exhaustPanel.ResumeLayout(false);
             this.exhaustPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yoshiExhaPB)).EndInit();
@@ -909,7 +910,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label playersCyclePB;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox gearSelectMotoPB;
         private System.Windows.Forms.Label label25;
 
     }

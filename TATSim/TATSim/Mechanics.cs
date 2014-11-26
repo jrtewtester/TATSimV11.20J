@@ -20,6 +20,14 @@ namespace TATSim
             }
         }
 
+        public static int CaclDaysMileage()
+        {
+            Random randy = new Random();
+            int randoInt = randy.Next(150, 199);
+            Console.WriteLine(randoInt);
+            return randoInt;
+        }
+
         public static void CalcRangeofMoto(Motorcycle moto)
         {
             switch(moto.Range)
